@@ -1,7 +1,9 @@
+@import "./variables";
+
 .footer {
   position: static;
-  background-color: black;
-  color: white;
+  background-color: $black;
+  color: $txt-fond-sombre;
   display: flex;
   align-items: center;
   flex-direction: column;

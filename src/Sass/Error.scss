@@ -1,11 +1,11 @@
+@import "./_variables";
+
 .error {
-  color: #ff6060;
-  font-family: Montserrat;
+  color: $principal;
   text-align: center;
   h2 {
     font-size: 155px;
     font-weight: 700;
-    text-align: center;
   }
   p {
     font-weight: 500;
