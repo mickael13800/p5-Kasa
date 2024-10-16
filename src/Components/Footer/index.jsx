@@ -1,5 +1,5 @@
 import Logo from "../../Assets/Logo_blanc.png";
-import "../../Sass/Footer.scss";
+import "./Footer.css";
 
 function Footer() {
   return (

@@ -1,0 +1,8 @@
+@import "./Sass/variables";
+@import "./Sass/placeholders";
+@import "./Sass/mixins";
+
+body {
+  font-family: $font-stack;
+  min-height: 100vh;
+}

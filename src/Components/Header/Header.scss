@@ -1,0 +1,29 @@
+@import "../../Sass/variables";
+@import "../../Sass/placeholders";
+@import "../../Sass/mixins";
+
+.header {
+  display: flex;
+  width: 1240px;
+  height: 68px;
+  justify-content: center;
+  align-items: center;
+  gap: 720px;
+  padding-top: 40px;
+  img {
+    width: 210px;
+    height: 68px;
+  }
+  nav {
+    display: flex;
+    align-items: flex-start;
+    gap: 57px;
+  }
+  a {
+    text-decoration: none;
+    color: $txt-fond-clair;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
