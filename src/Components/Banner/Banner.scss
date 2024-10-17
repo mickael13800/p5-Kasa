@@ -1,6 +1,10 @@
-.banner img {
+@import "../../Sass/variables";
+@import "../../Sass/placeholders";
+@import "../../Sass/mixins";
+
+.banner-about img {
   width: 1240px;
   height: 223px;
-  border-radius: 25px;
+  border-radius: $radius-banner;
   object-fit: cover;
 }

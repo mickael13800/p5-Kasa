@@ -2,23 +2,23 @@
 @import "../../Sass/mixins";
 @import "../../Sass/placeholders";
 
-.about {
+.collapse-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 1440px;
-  padding-top: 40px;
-  padding-bottom: 38px;
-  gap: 38px;
-}
+  .collapse-bar {
+    background-color: $principal;
+    color: $txt-fond-sombre;
+    display: flex;
+    justify-content: space-between;
+    width: 1023px;
+    padding: 10px 20px 10px 15px;
+    align-items: center;
+    border-radius: $radius-menu-deroulant;
+  }
 
-.collapse-bar {
-  background-color: $principal;
-  color: $txt-fond-sombre;
-  display: flex;
-  justify-content: space-between;
-  width: 1023px;
-  padding: 10px 20px 10px 15px;
-  align-items: center;
-  border-radius: $radius-menu-deroulant;
+  .collapse-description {
+    display: inline-flex;
+    width: 1023px;
+    padding: 15px 0 15px 20px;
+  }
 }

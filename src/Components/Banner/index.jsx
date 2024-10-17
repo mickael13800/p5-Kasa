@@ -1,4 +1,4 @@
-import Image from "../../Assets/chaine-montagne.png";
+import Image from "../../Assets/about-banner.png";
 import "./Banner.css";
 
 export function Banner() {
