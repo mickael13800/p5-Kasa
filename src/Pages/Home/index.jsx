@@ -1,23 +1,22 @@
 import React from "react";
-import { useState } from "react";
+import imgBannerHome from "../../Assets/home-banner.png";
 import KasaData from "../../Data/KasaData.json";
 import { Cards } from "../../Components/Cards";
 import { Banner } from "../../Components/Banner";
 import "./Home.css";
 
 function Home() {
-  const [cards, setCards] = useState(KasaData);
-
-  const cardsList = cards.map((card) => {
-    return <Cards key={card.id} title={card.title} content={card.cover} />;
-  });
-
   return (
     <div className="home">
-      <div className="banner">
-        <Banner />
+      <div className="banner-home">
+        <Banner image={imgBannerHome} />
+        <h1>Chez vous, partout et ailleurs</h1>
       </div>
-      <div className="choice-location">{cardsList}</div>
+      <div className="choice-location">
+        {KasaData.map((card) => {
+          return <Cards key={card.id} title={card.title} image={card.cover} />;
+        })}
+      </div>
     </div>
   );
 }

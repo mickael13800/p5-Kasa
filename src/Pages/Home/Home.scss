@@ -2,7 +2,28 @@
 @import "../../Sass/placeholders";
 @import "../../Sass/mixins";
 
-.choice-location {
+.home {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 1440px;
+  padding-top: 40px;
+  padding-bottom: 38px;
+  gap: 38px;
+}
+.choice-location {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding-left: 40px;
+  width: 1240px;
+  .cards {
+    width: 340px;
+    height: 340px;
+    img {
+      width: 340px;
+      height: 340px;
+      position: absolute;
+    }
+  }
 }
