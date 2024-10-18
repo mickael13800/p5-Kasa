@@ -3,6 +3,16 @@
 @import "../../Sass/mixins";
 
 .cards {
-  width: 340px;
-  height: 340px;
+  img {
+    border-radius: $radius-btn;
+    object-fit: cover;
+  }
+  h3 {
+    position: relative;
+    top: 268px;
+    left: 20px;
+    font-size: 18px;
+    width: 300px;
+    height: 52px;
+  }
 }

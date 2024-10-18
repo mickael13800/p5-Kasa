@@ -1,9 +1,9 @@
 import "./Cards.css";
 
-export function Cards({ title, cover }) {
+export function Cards({ title, image }) {
   return (
     <div className="cards">
-      <img src={cover} alt="habitation en location" />
+      <img src={image} alt="habitation en location" />
       <h3>{title}</h3>
     </div>
   );
