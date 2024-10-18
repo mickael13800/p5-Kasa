@@ -1,29 +1,27 @@
 import React from "react";
-import { useState } from "react";
+import imgBannerAbout from "../../Assets/about-banner.png";
 import EngagementsData from "../../Data/Engagements.json";
 import { Collapse } from "../../Components/Collapse";
 import { Banner } from "../../Components/Banner";
 import "./About.css";
 
 function About() {
-  const [engagements, setEngagements] = useState(EngagementsData);
-
-  const engagementsList = engagements.map((engagement) => {
-    return (
-      <Collapse
-        key={engagement.id}
-        title={engagement.title}
-        content={engagement.text}
-      />
-    );
-  });
-
   return (
     <div className="about">
       <div className="banner-about">
-        <Banner />
+        <Banner image={imgBannerAbout} />
       </div>
-      <div className="collapse-container">{engagementsList}</div>
+      <div className="collapse-container">
+        {EngagementsData.map((engagement) => {
+          return (
+            <Collapse
+              key={engagement.id}
+              title={engagement.title}
+              content={engagement.text}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }

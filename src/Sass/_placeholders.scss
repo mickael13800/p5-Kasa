@@ -2,3 +2,10 @@
   display: flex;
   justify-content: center;
 }
+
+%banner {
+  width: 1240px;
+  height: 223px;
+  border-radius: $radius-banner;
+  object-fit: cover;
+}
