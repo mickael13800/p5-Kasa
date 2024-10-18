@@ -1,1 +1,1 @@
-{"version":3,"sources":["Banner.scss","../../Sass/_variables.scss","Banner.css"],"names":[],"mappings":"AAIA;EACE,aAAA;EACA,aAAA;EACA,mBCMc;EDLd,oBAAA;KAAA,iBAAA;AEHF","file":"Banner.css"}
+{"version":3,"sources":["../../Sass/_placeholders.scss","../../Sass/_variables.scss","Banner.css"],"names":[],"mappings":"AAKA;EACE,aAAA;EACA,aAAA;EACA,mBCKc;EDJd,oBAAA;KAAA,iBAAA;AEJF","file":"Banner.css"}

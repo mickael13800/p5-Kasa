@@ -1,6 +1,7 @@
-.banner-about img {
+.banner-home img, .banner-about img {
   width: 1240px;
   height: 223px;
   border-radius: 25px;
-  object-fit: cover;
-} /*# sourceMappingURL=Banner.css.map */
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=Banner.css.map */

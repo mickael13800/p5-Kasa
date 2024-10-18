@@ -2,9 +2,14 @@
 @import "../../Sass/placeholders";
 @import "../../Sass/mixins";
 
-.banner-about img {
-  width: 1240px;
-  height: 223px;
-  border-radius: $radius-banner;
-  object-fit: cover;
+.banner-about {
+  img {
+    @extend %banner;
+  }
+}
+
+.banner-home {
+  img {
+    @extend %banner;
+  }
 }
