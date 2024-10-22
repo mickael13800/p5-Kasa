@@ -4,4 +4,8 @@
   border-radius: 25px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.banner-about h1 {
+  visibility: hidden;
 }/*# sourceMappingURL=Banner.css.map */

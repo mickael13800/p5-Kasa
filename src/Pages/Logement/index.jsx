@@ -5,13 +5,13 @@ import "./Logement.css";
 function Logement() {
   return (
     <div className="logement-container">
-      <div className="carroussel"></div>
+      <div className="gallery"></div>
       <div className="description">
         <div className="habitation"></div>
         <div className="host"></div>
       </div>
       <div className="note">
-        <div className="tag"></div>
+        <div className="tags"></div>
         <div className="rate"></div>
       </div>
       <div className="collapse-logement">

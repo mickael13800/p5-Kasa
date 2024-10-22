@@ -3,6 +3,9 @@
 @import "../../Sass/mixins";
 
 .banner-about {
+  h1 {
+    visibility: hidden;
+  }
   img {
     @extend %banner;
   }
