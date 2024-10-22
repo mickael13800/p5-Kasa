@@ -3,6 +3,9 @@ import { Collapse } from "../../Components/Collapse";
 import "./Logement.css";
 
 function Logement() {
+  {
+    /* useEffect pour recup ID dans URL*/
+  }
   return (
     <div className="logement-container">
       <div className="gallery"></div>

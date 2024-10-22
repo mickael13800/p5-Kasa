@@ -2,6 +2,9 @@ import ArrowUp from "../../Assets/arrow_back_top.png";
 import "./Collapse.css";
 
 export function Collapse({ title, content }) {
+  {
+    /*useState pour gérer clic sur arrow*/
+  }
   return (
     <div className="collapse">
       <div className="collapse-bar">

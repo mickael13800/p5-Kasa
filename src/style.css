@@ -1,7 +1,12 @@
 body,
 html {
   font-family: Montserrat;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
+}
+body a,
+html a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

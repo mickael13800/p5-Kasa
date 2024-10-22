@@ -5,7 +5,11 @@
 body,
 html {
   font-family: $font-stack;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
+  a {
+    text-decoration: none;
+  }
 }
