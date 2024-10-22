@@ -1,7 +1,14 @@
+.cards {
+  width: 340px;
+  height: 340px;
+}
 .cards img {
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 340px;
+  height: 340px;
+  position: absolute;
 }
 .cards h3 {
   position: relative;

@@ -3,9 +3,14 @@
 @import "../../Sass/mixins";
 
 .cards {
+  width: 340px;
+  height: 340px;
   img {
     border-radius: $radius-btn;
     object-fit: cover;
+    width: 340px;
+    height: 340px;
+    position: absolute;
   }
   h3 {
     position: relative;
