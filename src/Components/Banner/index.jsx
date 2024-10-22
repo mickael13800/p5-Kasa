@@ -2,8 +2,8 @@ import "./Banner.css";
 
 export function Banner({ image, texte }) {
   return (
-    <div>
-      <img src={image} alt="banner" />
+    <div className="banner">
+      <img src={image} alt="bannière avec paysage" />
       <h1 className="banner-txt">{texte}</h1>
     </div>
   );
