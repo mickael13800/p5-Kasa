@@ -1,6 +1,6 @@
 import React from "react";
 import imgBannerHome from "../../Assets/home-banner.png";
-import KasaData from "../../Data/KasaData.json";
+import KasaData from "../../data/KasaData.json";
 import { Cards } from "../../Components/Card";
 import { Banner } from "../../Components/Banner";
 import Logement from "../Logement";

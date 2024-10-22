@@ -1,6 +1,6 @@
 import React from "react";
 import imgBannerAbout from "../../Assets/about-banner.png";
-import EngagementsData from "../../Data/Engagements.json";
+import EngagementsData from "../../data/Engagements.json";
 import { Collapse } from "../../Components/Collapse";
 import { Banner } from "../../Components/Banner";
 import "./About.css";
