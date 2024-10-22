@@ -15,15 +15,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  padding-left: 40px;
-  width: 1240px;
-  .cards {
-    width: 340px;
-    height: 340px;
-    img {
-      width: 340px;
-      height: 340px;
-      position: absolute;
-    }
+  width: auto;
+  a {
+    color: $txt-fond-sombre;
   }
 }

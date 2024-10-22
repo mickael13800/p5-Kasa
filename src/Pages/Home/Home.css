@@ -12,15 +12,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  padding-left: 40px;
-  width: 1240px;
+  width: auto;
 }
-.choice-location .cards {
-  width: 340px;
-  height: 340px;
-}
-.choice-location .cards img {
-  width: 340px;
-  height: 340px;
-  position: absolute;
+.choice-location a {
+  color: white;
 }/*# sourceMappingURL=Home.css.map */
