@@ -1,6 +1,7 @@
 .cards {
   width: 340px;
   height: 340px;
+  position: relative;
 }
 .cards img {
   border-radius: 10px;
@@ -11,10 +12,21 @@
   position: absolute;
 }
 .cards h3 {
+  display: flex;
+  align-items: center;
   position: relative;
-  top: 268px;
+  top: 280px;
   left: 20px;
   font-size: 18px;
   width: 300px;
   height: 52px;
+  color: white;
+}
+.cards .overlay {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);
 }/*# sourceMappingURL=Card.css.map */
