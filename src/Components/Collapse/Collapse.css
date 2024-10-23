@@ -14,6 +14,16 @@
   align-items: center;
   border-radius: 5px;
 }
+.collapse-container .collapse-bar img:hover {
+  cursor: pointer;
+}
+.collapse-container .collapse-bar .arrow-up {
+  transform: rotate(0deg);
+  transition-duration: 0.5s;
+}
+.collapse-container .collapse-bar .arrow-up.true {
+  transform: rotate(180deg);
+}
 .collapse-container .collapse-description {
   display: inline-flex;
   width: 1023px;

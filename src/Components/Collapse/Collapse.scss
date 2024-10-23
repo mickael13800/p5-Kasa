@@ -16,6 +16,16 @@
     padding-right: 20px;
     align-items: center;
     border-radius: $radius-menu-deroulant;
+    img:hover {
+      cursor: pointer;
+    }
+    .arrow-up {
+      transform: rotate(0deg);
+      transition-duration: 0.5s;
+      &.true {
+        transform: rotate(180deg);
+      }
+    }
   }
 
   .collapse-description {
