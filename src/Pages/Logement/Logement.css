@@ -1,1 +1,4 @@
-/*# sourceMappingURL=Logement.css.map */
+.logement-container {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=Logement.css.map */
