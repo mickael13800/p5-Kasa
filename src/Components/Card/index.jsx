@@ -9,5 +9,3 @@ export function Cards({ title, image }) {
     </div>
   );
 }
-
-export default Cards;
