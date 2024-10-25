@@ -7,8 +7,12 @@ function Header() {
     <div className="header">
       <img src={Logo} alt="logo kasa" />
       <nav>
-        <NavLink to="/">Accueil</NavLink>
-        <NavLink to="/about">A propos</NavLink>
+        <NavLink className="link-home" to="/">
+          Accueil
+        </NavLink>
+        <NavLink className="link-about" to="/about">
+          A propos
+        </NavLink>
       </nav>
     </div>
   );
