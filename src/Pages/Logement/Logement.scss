@@ -3,5 +3,85 @@
 @import "../../Sass/mixins";
 
 .logement-container {
+  width: 1240px;
   @extend %flex-center;
+  flex-direction: column;
+  h2 {
+    color: $principal;
+  }
+  .description {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    .habitation {
+      display: flex;
+      flex-direction: column;
+    }
+    .host {
+      display: flex;
+      color: $principal;
+      p {
+        width: 93px;
+        height: 52px;
+      }
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+  .note {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+      .tag-item {
+        background-color: $principal;
+        color: $white;
+        padding: 6px 12px;
+        border-radius: 12px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+  .collapse-logement {
+    display: flex;
+    gap: 76px;
+    margin-top: 24px;
+    .collapse-bar {
+      background-color: $principal;
+      color: $txt-fond-sombre;
+      display: flex;
+      justify-content: space-between;
+      width: 582px;
+      height: 52px;
+      padding-left: 15px;
+      padding-right: 20px;
+      align-items: center;
+      border-radius: $radius-menu-deroulant;
+      img:hover {
+        cursor: pointer;
+      }
+      .arrow-up {
+        transform: rotate(0deg);
+        transition-duration: 0.3s;
+        transform-origin: center;
+        &.true {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .collapse-description {
+      display: inline-flex;
+      padding: 15px 0 15px 20px;
+    }
+    .equipment-item {
+      list-style-type: none;
+    }
+  }
 }

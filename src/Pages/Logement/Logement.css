@@ -1,4 +1,87 @@
 .logement-container {
   display: flex;
   justify-content: center;
+}
+
+.logement-container {
+  width: 1240px;
+  flex-direction: column;
+}
+.logement-container h2 {
+  color: #ff6060;
+}
+.logement-container .description {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.logement-container .description .habitation {
+  display: flex;
+  flex-direction: column;
+}
+.logement-container .description .host {
+  display: flex;
+  color: #ff6060;
+}
+.logement-container .description .host p {
+  width: 93px;
+  height: 52px;
+}
+.logement-container .description .host img {
+  border-radius: 50%;
+}
+.logement-container .note {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.logement-container .note .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+.logement-container .note .tags .tag-item {
+  background-color: #ff6060;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+}
+.logement-container .collapse-logement {
+  display: flex;
+  gap: 76px;
+  margin-top: 24px;
+}
+.logement-container .collapse-logement .collapse-bar {
+  background-color: #ff6060;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 582px;
+  height: 52px;
+  padding-left: 15px;
+  padding-right: 20px;
+  align-items: center;
+  border-radius: 5px;
+}
+.logement-container .collapse-logement .collapse-bar img:hover {
+  cursor: pointer;
+}
+.logement-container .collapse-logement .collapse-bar .arrow-up {
+  transform: rotate(0deg);
+  transition-duration: 0.3s;
+  transform-origin: center;
+}
+.logement-container .collapse-logement .collapse-bar .arrow-up.true {
+  transform: rotate(180deg);
+}
+.logement-container .collapse-logement .collapse-description {
+  display: inline-flex;
+  padding: 15px 0 15px 20px;
+}
+.logement-container .collapse-logement .equipment-item {
+  list-style-type: none;
 }/*# sourceMappingURL=Logement.css.map */

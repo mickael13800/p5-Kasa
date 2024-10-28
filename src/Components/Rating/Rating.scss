@@ -1,0 +1,17 @@
+@import "../../Sass/variables";
+@import "../../Sass/placeholders";
+@import "../../Sass/mixins";
+
+.rating {
+  display: flex;
+  gap: 4px; /* Espace entre les étoiles */
+
+  .star {
+    font-size: 24px; /* Taille des étoiles */
+    color: #ccc; /* Couleur pour les étoiles vides */
+
+    &.filled {
+      color: $principal; /* Couleur des étoiles remplies (dorée) */
+    }
+  }
+}

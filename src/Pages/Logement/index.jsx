@@ -1,10 +1,12 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Collapse } from "../../Components/Collapse";
 import KasaData from "../../data/KasaData.json";
-import "./Logement.css";
 import { Gallery } from "../../Components/Gallery";
+import Rating from "../../Components/Rating";
+import "./Logement.css";
 
 function Logement() {
   const { id } = useParams(); // Récupération de l'ID depuis l'URL
@@ -31,16 +33,37 @@ function Logement() {
     <div className="logement-container">
       <Gallery image={logementData.pictures} />
       <div className="description">
-        <div className="habitation"></div>
-        <div className="host"></div>
+        <div className="habitation">
+          <h2 {...KasaData}>{logementData.title}</h2>
+          <p {...KasaData}>{logementData.location}</p>
+        </div>
+        <div className="host">
+          <p>{logementData.host.name}</p>
+          <img src={logementData.host.picture} alt="photo du propriétaire" />
+        </div>
       </div>
       <div className="note">
-        <div className="tags"></div>
-        <div className="rate"></div>
+        <div className="tags">
+          {logementData.tags.map((tag, index) => (
+            <span key={index} className="tag-item">
+              {tag}
+            </span>
+          ))}
+        </div>
+        <div className="rate">
+          <Rating rating={parseInt(logementData.rating)} />
+        </div>
       </div>
       <div className="collapse-logement">
-        <Collapse />
-        <Collapse />
+        <Collapse title="Description" content={logementData.description} />
+        <Collapse
+          title="Équipements"
+          content={logementData.equipments.map((equipments, index) => (
+            <li key={index} className="equipment-item">
+              {equipments}
+            </li>
+          ))}
+        />
       </div>
     </div>
   );

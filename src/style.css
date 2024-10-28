@@ -1,12 +1,19 @@
-body,
-html {
+* {
   font-family: Montserrat;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+}
+
+div#root {
   width: 100%;
   max-width: 1440px;
-  height: 100%;
-  margin: 0 auto;
-}
-body a,
-html a {
-  text-decoration: none;
-}/*# sourceMappingURL=style.css.map */
+  padding: 0 50px;
+  box-sizing: border-box;
+} /*# sourceMappingURL=style.css.map */

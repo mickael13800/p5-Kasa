@@ -2,14 +2,20 @@
 @import "./Sass/placeholders";
 @import "./Sass/mixins";
 
-body,
-html {
+* {
   font-family: $font-stack;
-  width: 100%;
-  max-width: 1440px;
-  height: 100%;
-  margin: 0 auto;
+}
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
   a {
     text-decoration: none;
   }
+}
+div#root {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 50px;
+  box-sizing: border-box;
 }
