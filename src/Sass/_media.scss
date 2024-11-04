@@ -6,7 +6,6 @@
   //Header
   .header {
     align-items: end;
-    width: 100%;
     gap: 0;
     padding-left: 20px;
     img {
@@ -34,6 +33,41 @@
       flex-direction: column;
       width: auto;
       background: none;
+      padding: 0;
+    }
+  }
+  //Page About
+  .about {
+    width: auto;
+    padding: 20px;
+  }
+  .logement-container {
+    width: auto;
+    padding: 20px;
+  }
+  //Page Logement
+  .collapse-logement {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+  }
+  .note {
+    flex-direction: column;
+  }
+  //Page Error
+  .error {
+    width: auto;
+    h2 {
+      font-size: 96px;
+    }
+    p {
+      font-size: 18px;
+      text-align: center;
+      max-width: 260px;
+    }
+    a {
+      font-size: 14px;
     }
   }
 }

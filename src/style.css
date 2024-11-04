@@ -10,7 +10,6 @@ body {
   }
   .header {
     align-items: end;
-    width: 100%;
     gap: 0;
     padding-left: 20px;
   }
@@ -38,6 +37,38 @@ body {
     flex-direction: column;
     width: auto;
     background: none;
+    padding: 0;
+  }
+  .about {
+    width: auto;
+    padding: 20px;
+  }
+  .logement-container {
+    width: auto;
+    padding: 20px;
+  }
+  .collapse-logement {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+  }
+  .note {
+    flex-direction: column;
+  }
+  .error {
+    width: auto;
+  }
+  .error h2 {
+    font-size: 96px;
+  }
+  .error p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 260px;
+  }
+  .error a {
+    font-size: 14px;
   }
 }
 * {
