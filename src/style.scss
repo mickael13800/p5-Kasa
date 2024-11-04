@@ -1,13 +1,14 @@
 @import "./Sass/variables";
 @import "./Sass/placeholders";
 @import "./Sass/mixins";
+@import "./Sass/media";
 
 * {
   font-family: $font-stack;
 }
+
 body {
-  display: flex;
-  justify-content: center;
+  @extend %flex-center-row;
   margin: 0;
   a {
     text-decoration: none;
@@ -16,6 +17,6 @@ body {
 div#root {
   width: 100%;
   max-width: 1440px;
-  padding: 0 50px;
   box-sizing: border-box;
+  padding-top: 45px;
 }

@@ -1,10 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+@media all and (max-width: 767.98px) {
+  div#root {
+    max-width: 760px;
+    padding-top: 0;
+  }
+  .header {
+    align-items: end;
+    width: 100%;
+    gap: 0;
+    padding-left: 20px;
+  }
+  .header img {
+    width: auto;
+    height: 47px;
+  }
+  .header nav {
+    gap: 26px;
+  }
+  .header nav a {
+    font-size: 12px;
+  }
+  .home {
+    width: auto;
+    padding: 40px 20px 38px 20px;
+  }
+  .home .banner-txt {
+    font-size: 24px;
+    max-width: 225px;
+    left: 20px;
+  }
+  .home .choice-location {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background: none;
+  }
+}
 * {
   font-family: Montserrat;
 }
 
 body {
-  display: flex;
-  justify-content: center;
   margin: 0;
 }
 body a {
@@ -14,6 +54,6 @@ body a {
 div#root {
   width: 100%;
   max-width: 1440px;
-  padding: 0 50px;
   box-sizing: border-box;
-} /*# sourceMappingURL=style.css.map */
+  padding-top: 45px;
+}/*# sourceMappingURL=style.css.map */

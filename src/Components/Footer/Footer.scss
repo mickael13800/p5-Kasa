@@ -6,14 +6,12 @@
   position: static;
   background-color: $black;
   color: $txt-fond-sombre;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  @extend %flex-center-column;
   justify-content: center;
   width: auto;
   height: 209px;
   img {
-    width: 122px;
+    max-width: 122px;
     height: 40px;
   }
 }

@@ -1,7 +1,7 @@
 import Logo from "../../Assets/Logo_blanc.png";
 import "./Footer.css";
 
-function Footer() {
+export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -11,5 +11,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;

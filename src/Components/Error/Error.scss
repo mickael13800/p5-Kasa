@@ -3,10 +3,9 @@
 @import "../../Sass/mixins";
 
 .error {
-  display: flex;
-  width: 1440px;
-  flex-direction: column;
-  align-items: center;
+  @extend %flex-center-column;
+  width: 100%;
+  max-width: 1440px;
   gap: 139px;
   color: #ff6060;
   h2 {

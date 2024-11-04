@@ -3,13 +3,10 @@
 @import "../../Sass/mixins";
 
 .header {
-  display: flex;
-  width: 100%;
-  height: 68px;
-  justify-content: center;
+  @extend %flex-center-row;
   align-items: center;
+  height: 68px;
   gap: 720px;
-  padding-top: 40px;
   img {
     width: 210px;
     height: 68px;
@@ -18,11 +15,19 @@
     display: flex;
     align-items: flex-start;
     gap: 57px;
-  }
-  a {
-    color: $txt-fond-clair;
-    text-align: right;
-    font-size: 24px;
-    font-weight: 500;
+    width: 309px;
+    height: 34px;
+
+    a {
+      color: $txt-fond-clair;
+      text-align: right;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .link-home {
+      width: 136px;
+      text-align: right;
+      line-height: 142.6%; /* 34.224px */
+    }
   }
 }

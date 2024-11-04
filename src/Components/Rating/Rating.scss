@@ -4,14 +4,14 @@
 
 .rating {
   display: flex;
-  gap: 4px; /* Espace entre les étoiles */
+  gap: 4px;
 
   .star {
-    font-size: 24px; /* Taille des étoiles */
-    color: #ccc; /* Couleur pour les étoiles vides */
+    font-size: 24px;
+    color: #ccc;
 
     &.filled {
-      color: $principal; /* Couleur des étoiles remplies (dorée) */
+      color: $principal;
     }
   }
 }

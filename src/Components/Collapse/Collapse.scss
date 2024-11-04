@@ -3,35 +3,40 @@
 @import "../../Sass/placeholders";
 
 .collapse-container {
+  @extend %flex-center-column;
+  width: 100%;
+  max-width: 1023px;
+  .collapse {
+    width: 100%;
+  }
+}
+.collapse-bar {
+  background-color: $principal;
+  color: $txt-fond-sombre;
   display: flex;
-  flex-direction: column;
-  .collapse-bar {
-    background-color: $principal;
-    color: $txt-fond-sombre;
-    display: flex;
-    justify-content: space-between;
-    width: 1023px;
-    height: 52px;
-    padding-left: 15px;
-    padding-right: 20px;
-    align-items: center;
-    border-radius: $radius-menu-deroulant;
-    img:hover {
-      cursor: pointer;
-    }
-    .arrow-up {
-      transform: rotate(0deg);
-      transition-duration: 0.3s;
-      transform-origin: center;
-      &.true {
-        transform: rotate(180deg);
-      }
+  justify-content: space-between;
+  height: 52px;
+  padding-left: 15px;
+  padding-right: 20px;
+  align-items: center;
+  border-radius: $radius-5;
+  img:hover {
+    cursor: pointer;
+  }
+  .arrow-up {
+    transform: rotate(0deg);
+    transition-duration: 0.3s;
+    transform-origin: center;
+    &.true {
+      transform: rotate(180deg);
     }
   }
+}
 
-  .collapse-description {
-    display: inline-flex;
-    width: 1023px;
-    padding: 15px 0 15px 20px;
+.collapse-description {
+  display: inline-flex;
+  padding: 15px 20px 15px 20px;
+  p {
+    margin: 0;
   }
 }

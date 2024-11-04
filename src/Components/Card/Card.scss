@@ -7,9 +7,9 @@
   height: 340px;
   position: relative;
   img {
-    border-radius: $radius-btn;
+    border-radius: $radius-10;
     object-fit: cover;
-    width: 340px;
+    max-width: 340px;
     height: 340px;
     position: absolute;
     //display: block;
@@ -21,12 +21,12 @@
     top: 280px;
     left: 20px;
     font-size: 18px;
-    width: 300px;
+    max-width: 300px;
     height: 52px;
     color: white;
   }
   .overlay {
-    border-radius: 10px;
+    border-radius: $radius-10;
     position: absolute;
     top: 0;
     height: 100%;

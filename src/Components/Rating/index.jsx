@@ -2,7 +2,7 @@
 import React from "react";
 import "./Rating.css";
 
-function Rating({ rating }) {
+export default function Rating({ rating }) {
   const totalStars = 5;
 
   return (
@@ -18,5 +18,3 @@ function Rating({ rating }) {
     </div>
   );
 }
-
-export default Rating;

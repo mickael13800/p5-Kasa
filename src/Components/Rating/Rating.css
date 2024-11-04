@@ -1,12 +1,11 @@
-@charset "UTF-8";
 .rating {
   display: flex;
-  gap: 4px; /* Espace entre les étoiles */
+  gap: 4px;
 }
 .rating .star {
-  font-size: 24px; /* Taille des étoiles */
-  color: #ccc; /* Couleur pour les étoiles vides */
+  font-size: 24px;
+  color: #ccc;
 }
 .rating .star.filled {
-  color: #ff6060; /* Couleur des étoiles remplies (dorée) */
+  color: #ff6060;
 }/*# sourceMappingURL=Rating.css.map */

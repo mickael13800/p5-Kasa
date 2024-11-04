@@ -1,39 +1,59 @@
-.logement-container {
+.logement-container .description .host {
   display: flex;
   justify-content: center;
 }
 
 .logement-container {
-  width: 1240px;
+  display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.logement-container h2 {
-  color: #ff6060;
+
+.logement-container {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .logement-container .description {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  width: 100%;
+  max-width: 1240px;
 }
 .logement-container .description .habitation {
   display: flex;
   flex-direction: column;
 }
+.logement-container .description .habitation h2 {
+  color: #ff6060;
+  margin-bottom: 0;
+  font-size: 36px;
+}
+.logement-container .description .habitation p {
+  margin-top: 0;
+  font-size: 18px;
+}
 .logement-container .description .host {
-  display: flex;
+  align-items: end;
   color: #ff6060;
 }
 .logement-container .description .host p {
   width: 93px;
   height: 52px;
+  margin: 0;
 }
 .logement-container .description .host img {
   border-radius: 50%;
+  width: 64px;
+  height: 64px;
 }
 .logement-container .note {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  width: 100%;
+  max-width: 1240px;
 }
 .logement-container .note .tags {
   display: flex;
@@ -52,35 +72,14 @@
 }
 .logement-container .collapse-logement {
   display: flex;
+  justify-content: space-between;
   gap: 76px;
   margin-top: 24px;
+  width: 100%;
+  max-width: 1240px;
 }
-.logement-container .collapse-logement .collapse-bar {
-  background-color: #ff6060;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  width: 582px;
-  height: 52px;
-  padding-left: 15px;
-  padding-right: 20px;
-  align-items: center;
-  border-radius: 5px;
-}
-.logement-container .collapse-logement .collapse-bar img:hover {
-  cursor: pointer;
-}
-.logement-container .collapse-logement .collapse-bar .arrow-up {
-  transform: rotate(0deg);
-  transition-duration: 0.3s;
-  transform-origin: center;
-}
-.logement-container .collapse-logement .collapse-bar .arrow-up.true {
-  transform: rotate(180deg);
-}
-.logement-container .collapse-logement .collapse-description {
-  display: inline-flex;
-  padding: 15px 0 15px 20px;
+.logement-container .collapse-logement .collapse {
+  width: 50%;
 }
 .logement-container .collapse-logement .equipment-item {
   list-style-type: none;

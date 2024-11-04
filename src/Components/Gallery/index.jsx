@@ -4,7 +4,7 @@ import PrevImg from "../../Assets/Vector_left.png";
 import NextImg from "../../Assets/Vector_right.png";
 import "./Gallery.css";
 
-export function Gallery({ image }) {
+export default function Gallery({ image }) {
   // Initialiser l'état pour l'index de l'image actuelle
   const [currentIndex, setCurrentIndex] = useState(0);
 

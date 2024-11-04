@@ -1,0 +1,39 @@
+@media all and (max-width: 767.98px) {
+  div#root {
+    max-width: 760px;
+    padding-top: 0;
+  }
+  //Header
+  .header {
+    align-items: end;
+    width: 100%;
+    gap: 0;
+    padding-left: 20px;
+    img {
+      width: auto;
+      height: 47px;
+    }
+    nav {
+      gap: 26px;
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+  //Page Home
+  .home {
+    width: auto;
+    padding: 40px 20px 38px 20px;
+    .banner-txt {
+      font-size: 24px;
+      max-width: 225px;
+      left: 20px;
+    }
+    .choice-location {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      background: none;
+    }
+  }
+}

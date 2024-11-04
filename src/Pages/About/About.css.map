@@ -1,1 +1,1 @@
-{"version":3,"sources":["About.scss","About.css"],"names":[],"mappings":"AAKE;EACE,0BAAA;ACJJ;;ADQA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,aAAA;EACA,iBAAA;EACA,oBAAA;EACA,SAAA;ACLF","file":"About.css"}
+{"version":3,"sources":["../../Sass/_placeholders.scss","About.css","About.scss"],"names":[],"mappings":"AAKA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;ACJF;;ACCE;EACE,0BAAA;ADEJ;;ACEA;EAEE,WAAA;EACA,iBAAA;EACA,iBAAA;EACA,oBAAA;EACA,SAAA;ADAF","file":"About.css"}

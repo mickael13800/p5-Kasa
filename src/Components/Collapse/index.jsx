@@ -2,7 +2,7 @@ import { useState } from "react";
 import ArrowUp from "../../Assets/arrow_back_top.png";
 import "./Collapse.css";
 
-export function Collapse({ title, content }) {
+export default function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -16,7 +16,7 @@ export function Collapse({ title, content }) {
           onClick={() => setIsOpen(!isOpen)}
         />
       </div>
-      <span className="collapse-description">{isOpen && <p>{content}</p>}</span>
+      <div className="collapse-description">{isOpen && <p>{content}</p>}</div>
     </div>
   );
 }

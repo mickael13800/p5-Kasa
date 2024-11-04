@@ -1,6 +1,6 @@
 import "./Card.css";
 
-export function Cards({ title, image }) {
+export default function Cards({ title, image }) {
   return (
     <div className="cards">
       <img src={image} alt="habitation en location" />

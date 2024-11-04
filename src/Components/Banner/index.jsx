@@ -1,6 +1,6 @@
 import "./Banner.css";
 
-export function Banner({ image, texte }) {
+export default function Banner({ image, texte }) {
   return (
     <div className="banner">
       <img src={image} alt="bannière avec paysage" />

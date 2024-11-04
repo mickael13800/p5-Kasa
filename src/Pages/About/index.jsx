@@ -1,11 +1,11 @@
 import React from "react";
 import imgBannerAbout from "../../Assets/about-banner.png";
 import EngagementsData from "../../data/Engagements.json";
-import { Collapse } from "../../Components/Collapse";
-import { Banner } from "../../Components/Banner";
+import Collapse from "../../Components/Collapse";
+import Banner from "../../Components/Banner";
 import "./About.css";
 
-function About() {
+export default function About() {
   return (
     <div className="about">
       <div className="banner-about">
@@ -25,5 +25,3 @@ function About() {
     </div>
   );
 }
-
-export default About;

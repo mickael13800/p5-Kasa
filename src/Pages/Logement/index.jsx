@@ -1,41 +1,23 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from "react";
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { Collapse } from "../../Components/Collapse";
+import { useParams, Navigate } from "react-router-dom";
 import KasaData from "../../data/KasaData.json";
-import { Gallery } from "../../Components/Gallery";
+import Collapse from "../../Components/Collapse";
+import Gallery from "../../Components/Gallery";
 import Rating from "../../Components/Rating";
 import "./Logement.css";
 
-function Logement() {
-  const { id } = useParams(); // Récupération de l'ID depuis l'URL
-  const [logementData, setLogementData] = useState(null); // Pour stocker les détails du logement
+export default function Logement() {
+  const { id } = useParams();
 
-  useEffect(() => {
-    // Trouver le logement correspondant à l'ID récupéré
-    const logement = KasaData.find((logement) => logement.id === id);
+  const logementData = KasaData.find((logement) => logement.id === id);
 
-    // Si le logement est trouvé, on met à jour le state
-    if (logement) {
-      setLogementData(logement);
-    } else {
-      console.error("Logement non trouvé");
-    }
-  }, [id]); // Dépendance sur l'ID
-
-  // Si les données du logement ne sont pas encore chargées, on peut afficher un loader ou un message
-  if (!logementData) {
-    return <p>Chargement...</p>;
-  }
-
-  return (
+  return logementData ? (
     <div className="logement-container">
       <Gallery image={logementData.pictures} />
       <div className="description">
         <div className="habitation">
-          <h2 {...KasaData}>{logementData.title}</h2>
-          <p {...KasaData}>{logementData.location}</p>
+          <h2>{logementData.title}</h2>
+          <p>{logementData.location}</p>
         </div>
         <div className="host">
           <p>{logementData.host.name}</p>
@@ -58,15 +40,15 @@ function Logement() {
         <Collapse title="Description" content={logementData.description} />
         <Collapse
           title="Équipements"
-          content={logementData.equipments.map((equipments, index) => (
+          content={logementData.equipments.map((equipment, index) => (
             <li key={index} className="equipment-item">
-              {equipments}
+              {equipment}
             </li>
           ))}
         />
       </div>
     </div>
+  ) : (
+    <Navigate replace to={"/Error"} />
   );
 }
-
-export default Logement;
