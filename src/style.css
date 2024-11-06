@@ -3,74 +3,7 @@ body {
   justify-content: center;
 }
 
-@media all and (max-width: 767.98px) {
-  div#root {
-    max-width: 760px;
-    padding-top: 0;
-  }
-  .header {
-    align-items: end;
-    gap: 0;
-    padding-left: 20px;
-  }
-  .header img {
-    width: auto;
-    height: 47px;
-  }
-  .header nav {
-    gap: 26px;
-  }
-  .header nav a {
-    font-size: 12px;
-  }
-  .home {
-    width: auto;
-    padding: 40px 20px 38px 20px;
-  }
-  .home .banner-txt {
-    font-size: 24px;
-    max-width: 225px;
-    left: 20px;
-  }
-  .home .choice-location {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    background: none;
-    padding: 0;
-  }
-  .about {
-    width: auto;
-    padding: 20px;
-  }
-  .logement-container {
-    width: auto;
-    padding: 20px;
-  }
-  .collapse-logement {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    width: 100%;
-  }
-  .note {
-    flex-direction: column;
-  }
-  .error {
-    width: auto;
-  }
-  .error h2 {
-    font-size: 96px;
-  }
-  .error p {
-    font-size: 18px;
-    text-align: center;
-    max-width: 260px;
-  }
-  .error a {
-    font-size: 14px;
-  }
-}
+/******DESKTOP******/
 * {
   font-family: Montserrat;
 }
@@ -82,9 +15,132 @@ body a {
   text-decoration: none;
 }
 
-div#root {
+#root {
   width: 100%;
   max-width: 1440px;
   box-sizing: border-box;
-  padding-top: 45px;
+}
+
+#root > *:not(footer) {
+  padding: 45px 100px 0 100px;
+}
+
+/******MEDIA QUERIES******/
+/******TABLETTE******/
+/******MOBILE******/
+@media all and (max-width: 767.98px) {
+  #root > *:not(footer) {
+    padding: 20px 20px 0 20px;
+  }
+  /*****Header*****/
+  .header {
+    align-items: end;
+    gap: 0;
+  }
+  .header img {
+    height: 47px;
+  }
+  .header nav {
+    text-transform: uppercase;
+    gap: 26px;
+  }
+  .header nav a {
+    font-size: 12px;
+  }
+  /*****Page Home*****/
+  .home .banner {
+    height: 111px;
+  }
+  .home .banner-txt {
+    font-size: 24px;
+    left: 20px;
+  }
+  .home .choice-location {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    padding: 0;
+    gap: 20px;
+  }
+  .home .choice-location .cards {
+    height: 255px;
+  }
+  .home .choice-location .cards h3 {
+    top: 185px;
+  }
+  /*****Page About*****/
+  .about {
+    padding: 20px;
+  }
+  .about .banner {
+    height: 111px;
+  }
+  /*****Page Logement*****/
+  .logement-container .carroussel {
+    height: 255px;
+  }
+  .logement-container .carroussel .navigation img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .logement-container .logement-details {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  .logement-container .logement-details .description {
+    width: 100%;
+  }
+  .logement-container .logement-details .description h2 {
+    font-size: 18px;
+  }
+  .logement-container .logement-details .description p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .logement-container .logement-details .tag-item {
+    min-width: 84px;
+    font-size: 10px;
+  }
+  .logement-container .logement-details .note {
+    flex-direction: row-reverse;
+    padding-top: 10px;
+  }
+  .logement-container .logement-details .note .host img {
+    height: 32px;
+  }
+  .logement-container .logement-details .note .host p {
+    font-size: 12px;
+  }
+  .logement-container .logement-details .note .rate .star {
+    font-size: 18px;
+  }
+  .logement-container .collapse-logement {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .logement-container .collapse-logement .collapse {
+    width: 100%;
+  }
+  .logement-container .collapse-logement .collapse .collapse-bar {
+    height: 30px;
+  }
+  .logement-container .collapse-logement .collapse .collapse-bar h3 {
+    font-size: 13px;
+  }
+  .logement-container .collapse-logement .collapse .collapse-description p {
+    font-size: 12px;
+  }
+  /*****Page Error*****/
+  .error h2 {
+    font-size: 96px;
+  }
+  .error p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .error a {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */

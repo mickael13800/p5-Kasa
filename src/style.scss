@@ -1,12 +1,11 @@
 @import "./Sass/variables";
 @import "./Sass/placeholders";
 @import "./Sass/mixins";
-@import "./Sass/media";
 
+/******DESKTOP******/
 * {
   font-family: $font-stack;
 }
-
 body {
   @extend %flex-center-row;
   margin: 0;
@@ -14,9 +13,14 @@ body {
     text-decoration: none;
   }
 }
-div#root {
+#root {
   width: 100%;
   max-width: 1440px;
   box-sizing: border-box;
-  padding-top: 45px;
 }
+#root > *:not(footer) {
+  padding: 45px 100px 0 100px;
+}
+
+/******MEDIA QUERIES******/
+@import "./Sass/media";

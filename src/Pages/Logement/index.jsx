@@ -12,42 +12,49 @@ export default function Logement() {
   const logementData = KasaData.find((logement) => logement.id === id);
 
   return logementData ? (
-    <div className="logement-container">
-      <Gallery image={logementData.pictures} />
-      <div className="description">
-        <div className="habitation">
-          <h2>{logementData.title}</h2>
-          <p>{logementData.location}</p>
+    <main>
+      <div className="logement-container">
+        <Gallery image={logementData.pictures} />
+        <div className="logement-details">
+          <div className="description">
+            <div className="habitation">
+              <h2>{logementData.title}</h2>
+              <p>{logementData.location}</p>
+            </div>
+            <div className="tags">
+              {logementData.tags.map((tag, index) => (
+                <span key={index} className="tag-item">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="note">
+            <div className="host">
+              <p>{logementData.host.name}</p>
+              <img
+                src={logementData.host.picture}
+                alt="photo du propriétaire"
+              />
+            </div>
+            <div className="rate">
+              <Rating rating={parseInt(logementData.rating)} />
+            </div>
+          </div>
         </div>
-        <div className="host">
-          <p>{logementData.host.name}</p>
-          <img src={logementData.host.picture} alt="photo du propriétaire" />
+        <div className="collapse-logement">
+          <Collapse title="Description" content={logementData.description} />
+          <Collapse
+            title="Équipements"
+            content={logementData.equipments.map((equipment, index) => (
+              <li key={index} className="equipment-item">
+                {equipment}
+              </li>
+            ))}
+          />
         </div>
       </div>
-      <div className="note">
-        <div className="tags">
-          {logementData.tags.map((tag, index) => (
-            <span key={index} className="tag-item">
-              {tag}
-            </span>
-          ))}
-        </div>
-        <div className="rate">
-          <Rating rating={parseInt(logementData.rating)} />
-        </div>
-      </div>
-      <div className="collapse-logement">
-        <Collapse title="Description" content={logementData.description} />
-        <Collapse
-          title="Équipements"
-          content={logementData.equipments.map((equipment, index) => (
-            <li key={index} className="equipment-item">
-              {equipment}
-            </li>
-          ))}
-        />
-      </div>
-    </div>
+    </main>
   ) : (
     <Navigate replace to={"/Error"} />
   );

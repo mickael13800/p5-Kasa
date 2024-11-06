@@ -5,8 +5,6 @@
 }
 
 .error {
-  width: 100%;
-  max-width: 1440px;
   gap: 139px;
   color: #ff6060;
 }
@@ -24,4 +22,5 @@
 .error a {
   font-size: 18px;
   margin-bottom: 139px;
+  text-decoration: underline;
 }/*# sourceMappingURL=Error.css.map */

@@ -6,6 +6,7 @@
   @extend %flex-center-column;
   width: 100%;
   max-width: 1023px;
+  gap: 30px;
   .collapse {
     width: 100%;
   }
@@ -34,9 +35,20 @@
 }
 
 .collapse-description {
-  display: inline-flex;
-  padding: 15px 20px 15px 20px;
+  background: #f6f6f6;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out,
+    transform 0.3s ease-out;
+  &.collapse-description.open {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+  }
   p {
     margin: 0;
+    padding: 20px;
   }
 }

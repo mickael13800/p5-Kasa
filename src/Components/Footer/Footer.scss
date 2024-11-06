@@ -8,10 +8,10 @@
   color: $txt-fond-sombre;
   @extend %flex-center-column;
   justify-content: center;
-  width: auto;
+  //width: auto;
   height: 209px;
   img {
-    max-width: 122px;
+    //max-width: 122px;
     height: 40px;
   }
 }

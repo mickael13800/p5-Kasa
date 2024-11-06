@@ -4,7 +4,7 @@ import "./Header.css";
 
 export default function Header() {
   return (
-    <div className="header">
+    <header className="header">
       <img src={Logo} alt="logo kasa" />
       <nav>
         <NavLink className="link-home" to="/">
@@ -14,6 +14,6 @@ export default function Header() {
           A propos
         </NavLink>
       </nav>
-    </div>
+    </header>
   );
 }

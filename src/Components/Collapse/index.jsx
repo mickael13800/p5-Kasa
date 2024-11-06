@@ -16,7 +16,9 @@ export default function Collapse({ title, content }) {
           onClick={() => setIsOpen(!isOpen)}
         />
       </div>
-      <div className="collapse-description">{isOpen && <p>{content}</p>}</div>
+      <div className={`collapse-description ${isOpen ? "open" : ""}`}>
+        <p>{content}</p>
+      </div>
     </div>
   );
 }

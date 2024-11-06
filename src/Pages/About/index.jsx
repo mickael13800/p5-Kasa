@@ -7,21 +7,23 @@ import "./About.css";
 
 export default function About() {
   return (
-    <div className="about">
-      <div className="banner-about">
-        <Banner image={imgBannerAbout} />
+    <main>
+      <div className="about">
+        <div className="banner-about">
+          <Banner image={imgBannerAbout} />
+        </div>
+        <div className="collapse-container">
+          {EngagementsData.map((engagement) => {
+            return (
+              <Collapse
+                key={engagement.id}
+                title={engagement.title}
+                content={engagement.text}
+              />
+            );
+          })}
+        </div>
       </div>
-      <div className="collapse-container">
-        {EngagementsData.map((engagement) => {
-          return (
-            <Collapse
-              key={engagement.id}
-              title={engagement.title}
-              content={engagement.text}
-            />
-          );
-        })}
-      </div>
-    </div>
+    </main>
   );
 }

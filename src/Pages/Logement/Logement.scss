@@ -4,63 +4,67 @@
 
 .logement-container {
   @extend %flex-center-column;
-  width: 100%;
-  margin-top: 50px;
   margin-bottom: 20px;
-  .description {
+  .logement-details {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
-    max-width: 1240px;
-    .habitation {
+    padding-top: 30px;
+    .description {
       display: flex;
       flex-direction: column;
-      h2 {
-        color: $principal;
-        margin-bottom: 0;
-        font-size: 36px;
+      justify-content: space-between;
+      width: 50%;
+      .habitation {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          color: $principal;
+          margin: 0;
+          font-size: 36px;
+        }
+        p {
+          margin-top: 0;
+          font-size: 18px;
+        }
       }
-      p {
-        margin-top: 0;
-        font-size: 18px;
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 16px;
+        .tag-item {
+          background-color: $principal;
+          color: $white;
+          padding: 6px 12px;
+          border-radius: 12px;
+          font-size: 0.9rem;
+          font-weight: bold;
+          text-align: center;
+          min-width: 115px;
+        }
       }
     }
-    .host {
-      @extend %flex-center-row;
-      align-items: end;
-      color: $principal;
-      p {
-        width: 93px;
-        height: 52px;
-        margin: 0;
-      }
-      img {
-        border-radius: 50%;
-        width: 64px;
-        height: 64px;
-      }
-    }
-  }
-  .note {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 100%;
-    max-width: 1240px;
-    .tags {
+    .note {
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 16px;
-      .tag-item {
-        background-color: $principal;
-        color: $white;
-        padding: 6px 12px;
-        border-radius: 12px;
-        font-size: 0.9rem;
-        font-weight: bold;
-        text-align: center;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: end;
+      .host {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        color: $principal;
+        p {
+          margin: 0;
+          font-size: 18px;
+          font-weight: 500;
+        }
+        img {
+          border-radius: 50%;
+          height: 64px;
+        }
       }
     }
   }
@@ -69,8 +73,6 @@
     justify-content: space-between;
     gap: 76px;
     margin-top: 24px;
-    width: 100%;
-    max-width: 1240px;
     .collapse {
       width: 50%;
     }

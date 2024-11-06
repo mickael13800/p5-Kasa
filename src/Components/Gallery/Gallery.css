@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .carroussel {
   width: 100%;
-  max-width: 1240px;
   height: 415px;
   position: relative;
   /* Styles pour la numérotation */
@@ -27,8 +26,6 @@
   border: none;
 }
 .carroussel .navigation img {
-  max-width: 47px;
-  height: 79px;
   cursor: pointer;
 }
 .carroussel .counter {
@@ -37,7 +34,6 @@
   right: 50%;
   transform: translateX(50%);
   color: #fff;
-  max-width: 24px;
   height: 32px;
   font-size: 14px;
 }/*# sourceMappingURL=Gallery.css.map */

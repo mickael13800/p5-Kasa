@@ -3,7 +3,7 @@
   gap: 4px;
 }
 .rating .star {
-  font-size: 24px;
+  font-size: 36px;
   color: #ccc;
 }
 .rating .star.filled {

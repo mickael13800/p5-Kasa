@@ -8,21 +8,26 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div className="home">
-      <div className="banner-home">
-        <Banner texte="Chez vous, partout et ailleurs" image={imgBannerHome} />
+    <main>
+      <div className="home">
+        <div className="banner-home">
+          <Banner
+            texte="Chez vous, partout et ailleurs"
+            image={imgBannerHome}
+          />
+        </div>
+        <div className="choice-location">
+          {KasaData.map((card) => {
+            return (
+              <div className="card-location" key={card.id}>
+                <Link to={`/logement/${card.id}`}>
+                  <Cards title={card.title} image={card.cover} />
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </div>
-      <div className="choice-location">
-        {KasaData.map((card) => {
-          return (
-            <div className="card-location" key={card.id}>
-              <Link to={`/logement/${card.id}`}>
-                <Cards title={card.title} image={card.cover} />
-              </Link>
-            </div>
-          );
-        })}
-      </div>
-    </div>
+    </main>
   );
 }

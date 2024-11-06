@@ -4,19 +4,16 @@
 
 .home {
   @extend %flex-center-column;
-  width: 100%;
-  max-width: 1440px;
-  padding-top: 40px;
+  padding-top: 5px;
   padding-bottom: 38px;
   gap: 38px;
 }
 .choice-location {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 50px;
-  row-gap: 30px;
+  column-gap: 60px;
+  row-gap: 50px;
   background: #f6f6f6;
-  padding: 35px 50px 50px 50px;
+  padding: 50px;
   border-radius: $radius-25;
-  margin-bottom: 40px;
 }
