@@ -4,6 +4,11 @@
   align-items: center;
 }
 
+.collapse-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
 .collapse-container {
   width: 100%;
   max-width: 1023px;
@@ -16,8 +21,6 @@
 .collapse-bar {
   background-color: #ff6060;
   color: white;
-  display: flex;
-  justify-content: space-between;
   height: 52px;
   padding-left: 15px;
   padding-right: 20px;

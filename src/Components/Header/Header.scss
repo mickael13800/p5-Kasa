@@ -3,19 +3,16 @@
 @import "../../Sass/mixins";
 
 .header {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-row-between;
   align-items: center;
   height: 68px;
   img {
-    //width: 210px;
     height: 68px;
   }
   nav {
     display: flex;
     align-items: flex-start;
     gap: 57px;
-    //width: 309px;
     height: 34px;
 
     a {
@@ -25,9 +22,8 @@
       font-weight: 500;
     }
     .link-home {
-      //width: 136px;
       text-align: right;
-      line-height: 142.6%; /* 34.224px */
+      line-height: 142.6%;
     }
   }
 }

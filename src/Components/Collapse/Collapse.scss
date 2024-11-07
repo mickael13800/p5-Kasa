@@ -14,8 +14,7 @@
 .collapse-bar {
   background-color: $principal;
   color: $txt-fond-sombre;
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-row-between;
   height: 52px;
   padding-left: 15px;
   padding-right: 20px;

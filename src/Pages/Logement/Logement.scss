@@ -11,9 +11,7 @@
     width: 100%;
     padding-top: 30px;
     .description {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      @extend %flex-column-between;
       width: 50%;
       .habitation {
         display: flex;
@@ -46,9 +44,7 @@
       }
     }
     .note {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      @extend %flex-column-between;
       align-items: end;
       .host {
         display: flex;
@@ -69,8 +65,7 @@
     }
   }
   .collapse-logement {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex-row-between;
     gap: 76px;
     margin-top: 24px;
     .collapse {

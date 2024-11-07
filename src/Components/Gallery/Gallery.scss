@@ -7,8 +7,7 @@
   height: 415px;
   position: relative;
   .photo-logement {
-    width: 100%;
-    height: 100%;
+    @include WH-full;
     position: relative;
     border-radius: $radius-25;
     object-fit: cover;
@@ -16,8 +15,7 @@
   .navigation {
     position: absolute;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    @extend %flex-row-between;
     transform: translateY(-50%);
     top: 50%;
     button {
@@ -28,7 +26,7 @@
       cursor: pointer;
     }
   }
-  /* Styles pour la numérotation */
+
   .counter {
     position: absolute;
     bottom: 10px;

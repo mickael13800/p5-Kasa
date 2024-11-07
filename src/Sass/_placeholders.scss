@@ -9,6 +9,17 @@
   align-items: center;
 }
 
+%flex-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+%flex-row-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 %banner {
   width: 100%;
   height: 100%;
