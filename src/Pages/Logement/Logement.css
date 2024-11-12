@@ -78,6 +78,7 @@
 .logement-container .collapse-logement {
   gap: 76px;
   margin-top: 24px;
+  width: 100%;
 }
 .logement-container .collapse-logement .collapse {
   width: 50%;

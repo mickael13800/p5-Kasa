@@ -68,6 +68,7 @@
     @extend %flex-row-between;
     gap: 76px;
     margin-top: 24px;
+    width: 100%;
     .collapse {
       width: 50%;
     }
