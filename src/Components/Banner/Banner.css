@@ -13,9 +13,9 @@
 
 .banner-about {
   width: 100%;
-}
-.banner-about h1 {
-  visibility: hidden;
+  /*h1 {
+    visibility: hidden;
+  }*/
 }
 .banner-home {
   width: 100%;
