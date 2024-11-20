@@ -78,6 +78,9 @@
           max-height: 30px;
         }
       }
+      .counter {
+        visibility: hidden;
+      }
     }
     .logement-details {
       flex-direction: column;

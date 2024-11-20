@@ -98,6 +98,9 @@ body a {
     max-width: 30px;
     max-height: 30px;
   }
+  .logement-container .carroussel .counter {
+    visibility: hidden;
+  }
   .logement-container .logement-details {
     flex-direction: column;
     padding-top: 10px;
